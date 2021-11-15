@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../src/calendar.css">
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div id="date-time">
+        <div id="date"></div>
+        <div id="time"></div>
+      </div>
+      <button id="goToToday" onclick="goToToday()">برو به امروز</button>
+      <div class="month">
+        <div id="mainCalendar">
+          <div id="month">
+            <button class="perviousMonth" onclick="perviousMonth()">ماه قبل</button>
+            <button class="nextMonth" onclick="nextMonth()">ماه بعد</button>
+            <h1 id="monthShamsi"></h1>
+            <h4 id="monthGhamari"></h4>
+            <h4 id="monthMiladi"></h4>
+          </div>
+          <table class="calendarTable">
+            <thead>
+              <tr>
+                <td>شنبه</td>
+                <td>یکشنبه</td>
+                <td>دوشنبه</td>
+                <td>سه‌شنبه</td>
+                <td>چهارشنبه</td>
+                <td>پنج‌شنبه</td>
+                <td>جمعه</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr></tr>
+              <tr></tr>
+              <tr></tr>
+              <tr></tr>
+              <tr></tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="mainMonasebat">
+          <div id="monasebat">
+            <h1>مناسبت های این ماه</h1>
+          </div>
+          <div id="monasebatha"></div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="../src/calendar.js"></script>
+</html>
